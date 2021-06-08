@@ -17,6 +17,7 @@ ul {
 
 body {
     background: #F1F9FF;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -24,23 +25,17 @@ body {
     max-width: 1066px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 auto 60px;
 }
 
 .page__content {
     flex: 1;
-    height: 1000px;
 }
 
 .page__aside {
     width: 238px;
     margin-left: 31px;
     padding-top: 88px;
-}
-
-.container {
-    background: #FFFFFF;
-    border-radius: 10px;
 }
 
 .title {
@@ -52,92 +47,117 @@ body {
     margin-bottom: 25px;
 }
 
-.page__content-teams {
+.players {
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.players__header {
+
+}
+
+.players__content {
+    padding: 0 20px 20px;
+}
+
+.teams-switch {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #EBEBEB;
     height: 50px;
-    margin-bottom: 28px;
 }
 
-.first-team {
+.teams-switch__team {
     width: 50%;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 12px;
     line-height: 50px;
     color: #184272;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
 }
 
-.first-team:hover {
-    border-bottom: 2px solid #0A8BFF;
+.teams-switch__team.active {
+    border-color: #0A8BFF;
+    cursor: default;
+    pointer-events: none;
     background: radial-gradient(50.14% 92.5% at 49.86% 92.5%, rgba(10, 139, 255, 0.17) 0%, rgba(255, 255, 255, 0) 100%);
 )
 }
 
-.second-team {
-    width: 50%;
-    font-weight: 600;
-    font-size: 12px;
-    height: 50px;
-    color: #184272;
+.teams-switch__icon {
+    margin-right: 16px;
 }
 
-.second-team:hover {
-    border-bottom: 2px solid #0A8BFF;
-    background: radial-gradient(50.14% 92.5% at 49.86% 92.5%, rgba(10, 139, 255, 0.17) 0%, rgba(255, 255, 255, 0) 100%);
-}
-
-.header-text {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 140%;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #C1C1C1;
-    margin-left: 27px;
-    margin-bottom: 18px;
-}
-
-.player__table {
+.players-table {
+    padding-top: 28px;
     font-weight: 600;
     font-size: 16px;
     color: #021B31;
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 29px;
 }
 
-.player__table tr {
-    height: 45px;
+.players-table caption {
+    padding: 26px 0 16px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #C1C1C1;
 }
 
+.players-table tr {
+    border-radius: 5px;
+}
 
-.cool-number {
+.players-table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.players-table td:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.players-table td:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.players-table td:nth-child(1) {
     padding-left: 29px;
 }
 
-.cool-flag {
+.players-table td:nth-child(2) {
     padding-right: 20px;
 }
 
-.cool-name {
+.players-table td:nth-child(3) {
     padding-right: 20px;
     max-width: 289px;
 }
 
-.player__table tr:nth-child(odd) {
+.players-table tr:nth-child(odd) {
     background: #F8F8F8;
 }
 
-.cards {
+.player-stats {
     display: flex;
     justify-content: center;
     list-style-type: none;
     margin-right: 65px;
 }
 
-.card__item {
-    padding-right: 20px;
+.player-stats__item {
+    margin-right: 20px;
+}
+
+.player-stats__item img {
+    margin-left: 3px;
 }
 
 .cool-name a {
@@ -147,15 +167,9 @@ body {
     margin-left: 15px;
 }
 
-.card__item img {
-    margin-left: 3px;
-}
-
 .views {
     padding-right: 10px;
 }
-
-
 
 .judges__block{
     width: 238px;
@@ -201,49 +215,60 @@ body {
     margin-right: 16px;
 }
 
-.stadium__block{
-    background: url("images/stadium.png")no-repeat;
-    height: 320px;
+.stadium-props {
+    position: relative;
+    background: url("images/stadium.png") no-repeat center;
+    background-size: cover;
+    min-height: 320px;
+    border-radius: 10px;
 }
 
-.stadium-city{
+.stadium-props__footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.stadium-props__city {
+    padding: 22px 90px 0 22px;
     font-weight: 600;
     font-size: 16px;
     color: #FFFFFF;
-    padding-top: 22px;
-    padding-left: 20px;
 }
 
-.stadium-temperature{
+.stadium-props__weather {
+    position: absolute;
+    top: 44px;
+    right: 0;
     font-weight: 500;
     font-size: 36px;
     text-align: right;
     color: #FFFFFF;
     margin-top: -13px;
     padding-right: 23px;
+    padding-left: 23px;
 }
 
-.stadium-location{
+.stadium-props__location {
+    padding: 20px;
     font-weight: 600;
-    font-size: 14px;
     color: #FFFFFF;
-    padding-top: 82px;
-    padding-left: 21px;
-    padding-bottom: 20px;
 }
 
-.stadium__line{
+.stadium-props__location img {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.stadium-props__line {
     border: none;
     background-color: rgba(255, 255, 255, 0.5);
     height: 2px;
-    width: 200px;
-    margin-left: 20px;
-    margin-bottom: 13px;
+    margin: 0 20px 14px;
 }
 
-.stadium-quantity {
+.stadium-props__people-quantity {
     font-weight: 600;
-    font-size: 14px;
     text-align: right;
     color: #FFFFFF;
     display: flex;
@@ -255,7 +280,6 @@ body {
 
 .official-judges{
     padding-top: 34px;
-    font-size: 14px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #C1C1C1;
