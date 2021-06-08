@@ -1,0 +1,266 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+ul {
+    margin: 0;
+}
+
+body {
+    background: #F1F9FF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page {
+    max-width: 1066px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.page__content {
+    flex: 1;
+    height: 1000px;
+}
+
+.page__aside {
+    width: 238px;
+    margin-left: 31px;
+    padding-top: 88px;
+}
+
+.container {
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 140%;
+    color: #021B31;
+    margin-top: 36px;
+    margin-bottom: 25px;
+}
+
+.page__content-teams {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EBEBEB;
+    height: 50px;
+    margin-bottom: 28px;
+}
+
+.first-team {
+    width: 50%;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 50px;
+    color: #184272;
+}
+
+.first-team:hover {
+    border-bottom: 2px solid #0A8BFF;
+    background: radial-gradient(50.14% 92.5% at 49.86% 92.5%, rgba(10, 139, 255, 0.17) 0%, rgba(255, 255, 255, 0) 100%);
+)
+}
+
+.second-team {
+    width: 50%;
+    font-weight: 600;
+    font-size: 12px;
+    height: 50px;
+    color: #184272;
+}
+
+.second-team:hover {
+    border-bottom: 2px solid #0A8BFF;
+    background: radial-gradient(50.14% 92.5% at 49.86% 92.5%, rgba(10, 139, 255, 0.17) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.header-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #C1C1C1;
+    margin-left: 27px;
+    margin-bottom: 18px;
+}
+
+.player__table {
+    font-weight: 600;
+    font-size: 16px;
+    color: #021B31;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 29px;
+}
+
+.player__table tr {
+    height: 45px;
+}
+
+
+.cool-number {
+    padding-left: 29px;
+}
+
+.cool-flag {
+    padding-right: 20px;
+}
+
+.cool-name {
+    padding-right: 20px;
+    max-width: 289px;
+}
+
+.player__table tr:nth-child(odd) {
+    background: #F8F8F8;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-right: 65px;
+}
+
+.card__item {
+    padding-right: 20px;
+}
+
+.cool-name a {
+    color: #00D3ED;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.card__item img {
+    margin-left: 3px;
+}
+
+.views {
+    padding-right: 10px;
+}
+
+
+
+.judges__block{
+    width: 238px;
+    height: 119px;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 21px;
+}
+
+.judges-position{
+    font-weight: bold;
+    font-size: 12px;
+    color: #C1C1C1;
+    margin-top: 14px;
+    margin-left: 19px;
+}
+
+.judges-name{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    color: #021B31;
+    margin-top: 10px;
+    margin-left: 19px;
+    margin-right: 19px;
+}
+
+.judges-name img{
+    margin-top: -12px;
+}
+
+.judges-city{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 12px;
+    color: #C1C1C1;
+    margin-left: 19px;
+    margin-top: 19px;
+    margin-right: 16px;
+}
+
+.stadium__block{
+    background: url("images/stadium.png")no-repeat;
+    height: 320px;
+}
+
+.stadium-city{
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-top: 22px;
+    padding-left: 20px;
+}
+
+.stadium-temperature{
+    font-weight: 500;
+    font-size: 36px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-top: -13px;
+    padding-right: 23px;
+}
+
+.stadium-location{
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-top: 82px;
+    padding-left: 21px;
+    padding-bottom: 20px;
+}
+
+.stadium__line{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 2px;
+    width: 200px;
+    margin-left: 20px;
+    margin-bottom: 13px;
+}
+
+.stadium-quantity {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: right;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 21px;
+    padding-right: 20px;
+
+}
+
+.official-judges{
+    padding-top: 34px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #C1C1C1;
+}
+
+
+
+
