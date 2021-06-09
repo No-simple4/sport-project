@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 	toggleTeams();
+
 });
 
 function toggleTeams() {
@@ -9,7 +10,7 @@ function toggleTeams() {
 	const $secondTeam = $('.js-second-team');
 
 	$firstTeamButton.click(function() {
-		$firstTeam.show();
+		$firstTeam.fadeIn(1000);
 		$secondTeam.hide();
 
 		$(this).addClass('active');
@@ -18,7 +19,7 @@ function toggleTeams() {
 
 	$secondTeamButton.click(function() {
 		$firstTeam.hide();
-		$secondTeam.show();
+		$secondTeam.fadeIn(1000);
 
 		$firstTeamButton.removeClass('active');
 		$(this).addClass('active');

@@ -99,6 +99,7 @@ body {
     color: #021B31;
     width: 100%;
     border-collapse: collapse;
+
 }
 
 .players-table caption {
@@ -113,6 +114,7 @@ body {
 
 .players-table tr {
     border-radius: 5px;
+    
 }
 
 .players-table td {
@@ -214,6 +216,15 @@ body {
     margin: 19px 16px 19px 19px;
 }
 
+.stadium-title{
+    color: #C1C1C1;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
 .stadium-props {
     position: relative;
     background: url("images/stadium.png") no-repeat center;
