@@ -12,367 +12,506 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="page">
+    <div class="page">
 
-    <div class="page__content">
-        <h1 class="title">Составы команд</h1>
-        <div class="players">
-            <div class="players__header">
-                <div class="teams-switch">
-                    <div class="teams-switch__team active">
-                        <img class="teams-switch__icon" src="images/ico-dinamo.png" alt="ФК Динамо">
-                        ФК Динамо Москва
+        <div class="page__content">
+            <h1 class="title">Составы команд</h1>
+            <div class="players">
+                <div class="players__header">
+                    <div class="teams-switch">
+                        <div class="js-first-team-button teams-switch__team active">
+                            <img class="teams-switch__icon" src="images/ico-dinamo.png" alt="ФК Динамо">
+                            ФК Динамо Москва
+                        </div>
+                        <div class="js-second-team-button teams-switch__team">
+                            <img class="teams-switch__icon" src="images/ico-tver.png" alt="Тверь">
+                            Тверь
+                        </div>
                     </div>
-                    <div class="teams-switch__team">
-                        <img class="teams-switch__icon" src="images/ico-tver.png" alt="Тверь">
-                        Тверь
+                </div>
+                <div class="players__content">
+                    <div class="js-first-team">
+                        <table class="players-table">
+                            <caption class="header-text">Основные составы</caption>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Станислав Черчесов</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ВРТ</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Юрий Гагарин <span>(к)</span></td>
+                                <td></td>
+                                <td class="views">ЗЩ</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Константин Константинов</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td class="views">ЗЩ</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Сергей Игнашевич</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ЗЩ</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Александр Кержаков</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ЗЩ</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Сергей Семак</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ПЗ</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Константин Зырянов</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ПЗ</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Андрей Аршавин</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ПЗ</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Валерий Карпин</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ПЗ</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Дмитрий Лоськов</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                    </ul>
+                                </td>
+                                <td>НАП</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Дмитирй Сычёв</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>НАП</td>
+                            </tr>
+                        </table>
+                        <table class="players-table">
+                            <caption>Запасные</caption>
+                            <tr>
+                                <td>12</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Станислав Черчесов</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ВРТ</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Игорь Акинфеев</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ВРТ</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Денис Колодин</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ЗЩ</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Роман Широков</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ЗЩ</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Дмитрий Хохлов</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ЗЩ</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Андрей Тихонов</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ПЗ</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Федор Черенков</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ПЗ</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Эдуард Стрельцов</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ПЗ</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Егор Титов</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ПЗ</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Дмитрий Торбинский <span>мф<span></td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>НАП</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Магомед Шапи-Сулейманов <span>мф</span></td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>НАП</td>
+                            </tr>
+                        </table>
+                        <table class="players-table">
+                            <caption>Тренерский штаб</caption>
+                            <tr>
+                                <td>ГТ</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Константин Бесков</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                    </ul>
+                                </td>
+                                <td>Главный тренер</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="js-second-team hidden">
+                        <table class="players-table">
+                            <caption class="header-text">Основные составы</caption>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Березовский Владимир</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ВРТ</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Пушкин <span>(к)</span></td>
+                                <td></td>
+                                <td class="views">ЗЩ</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Толстой</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td class="views">ЗЩ</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Сергей Игнашевич</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ЗЩ</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Александр Кержаков</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ЗЩ</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Сергей Семак</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ПЗ</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Константин Зырянов</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ПЗ</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Андрей Аршавин</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ПЗ</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Валерий Карпин</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/red-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>ПЗ</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Дмитрий Лоськов</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                    </ul>
+                                </td>
+                                <td>НАП</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td><img src="images/ru.png"></td>
+                                <td>Дмитирй Сычёв</td>
+                                <td>
+                                    <ul class="player-stats">
+                                        <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
+                                        <li class="player-stats__item">83'<img src="images/replace.png"></li>
+                                    </ul>
+                                </td>
+                                <td>НАП</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
-            <div class="players__content">
-                <table class="players-table">
-                    <caption class="header-text">Основные составы</caption>
-                    <tr>
-                        <td>1</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Станислав Черчесов</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ВРТ</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Юрий Гагарин <span>(к)</span></td>
-                        <td></td>
-                        <td class="views">ЗЩ</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Константин Константинов</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td class="views">ЗЩ</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Сергей Игнашевич</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ЗЩ</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Александр Кержаков</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ЗЩ</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Сергей Семак</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ПЗ</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Константин Зырянов</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ПЗ</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Андрей Аршавин</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ПЗ</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Валерий Карпин</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ПЗ</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Дмитрий Лоськов</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                            </ul>
-                        </td>
-                        <td>НАП</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Дмитирй Сычёв</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>НАП</td>
-                    </tr>
-                </table>
-                <table class="players-table">
-                    <caption>Запасные</caption>
-                    <tr>
-                        <td>12</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Станислав Черчесов</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ВРТ</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Игорь Акинфеев</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ВРТ</td>
-                    </tr>
-                    <tr>
-                        <td>14</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Денис Колодин</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ЗЩ</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Роман Широков</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ЗЩ</td>
-                    </tr>
-                    <tr>
-                        <td>16</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Дмитрий Хохлов</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ЗЩ</td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Андрей Тихонов</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ПЗ</td>
-                    </tr>
-                    <tr>
-                        <td>18</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Федор Черенков</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ПЗ</td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Эдуард Стрельцов</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ПЗ</td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Егор Титов</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>ПЗ</td>
-                    </tr>
-                    <tr>
-                        <td>21</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Дмитрий Торбинский <span>мф<span></td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>НАП</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Магомед Шапи-Сулейманов <span>мф</span></td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/replace.png"></li>
-                            </ul>
-                        </td>
-                        <td>НАП</td>
-                    </tr>
-                </table>
-                <table class="players-table">
-                    <caption>Тренерский штаб</caption>
-                    <tr>
-                        <td>ГТ</td>
-                        <td><img src="images/ru.png"></td>
-                        <td>Константин Бесков</td>
-                        <td>
-                            <ul class="player-stats">
-                                <li class="player-stats__item">83'<img src="images/yellow-card.png"></li>
-                                <li class="player-stats__item">83'<img src="images/red-card.png"></li>
-                            </ul>
-                        </td>
-                        <td>Главный тренер</td>
-                    </tr>
-                </table>
-            </div>
         </div>
+
+        <aside class="page__aside">
+            <captian>Стадион</captian>
+
+            <div class="stadium-props">
+                <p class="stadium-props__city">Москва</p>
+                <p class="stadium-props__weather"><img src="images/cloud.png"></br>+5°C</p>
+                <div class="stadium-props__footer">
+                    <p class="stadium-props__location"><img src="images/location.png">Стадион Динамо им. Льва Ивановича Яшина</p>
+                    <hr class="stadium-props__line" />
+                    <p class="stadium-props__people-quantity"><img src="images/Vector.png">5 000 чел.</p>
+                </div>
+            </div>
+            <p class="official-judges">Официальные лица</p>
+            <div class="judges__block">
+                    <p class="judges-position">Главный судья</p>
+                    <div class="judges-name">Пьер Луиджи </br>Коллина<img src="images/key.png"> </div>
+                <div class="judges-city"><p>Омск</p> <p>1 кат.</p></div>
+            </div>
+            <div class="judges__block">
+                <p class="judges-position">Первый ассистент судьи</p>
+                <div class="judges-name">Сергей </br>Лапочкин<img src="images/flag.png"> </div>
+                <div class="judges-city"><p>Омск</p> <p>1 кат.</p></div>
+            </div>
+            <div class="judges__block">
+                <p class="judges-position">Второй ассистент судьи</p>
+                <div class="judges-name">Сергей </br>Карасев<img src="images/flag.png"> </div>
+                <div class="judges-city"><p>Омск</p> <p>1 кат.</p></div>
+            </div>
+            <div class="judges__block">
+                <p class="judges-position">Резервный судья</p>
+                <div class="judges-name">Евгений</br>Белов </div>
+                <div class="judges-city"><p>Омск</p> <p>1 кат.</p></div>
+            </div>
+            <div class="judges__block">
+                <p class="judges-position">Делегат матча</p>
+                <div class="judges-name">Василий</br>Седельников </div>
+                <div class="judges-city"><p>Омск</p> <p>1 кат.</p></div>
+            </div>
+            <div class="judges__block">
+                <p class="judges-position">VAR</p>
+                <div class="judges-name">Михаил</br>Самохвалов<img src="images/var.png"> </div>
+                <div class="judges-city"><p>Омск</p> <p>1 кат.</p></div>
+            </div>
+
+        </aside>
     </div>
-
-    <aside class="page__aside">
-        <captian>Стадион</captian>
-
-        <div class="stadium-props">
-            <p class="stadium-props__city">Москва</p>
-            <p class="stadium-props__weather"><img src="images/cloud.png"></br>+5°C</p>
-            <div class="stadium-props__footer">
-                <p class="stadium-props__location"><img src="images/location.png">Стадион Динамо им. Льва Ивановича Яшина</p>
-                <hr class="stadium-props__line" />
-                <p class="stadium-props__people-quantity"><img src="images/Vector.png">5 000 чел.</p>
-            </div>
-        </div>
-        <p class="official-judges">Официальные лица</p>
-        <div class="judges__block">
-                <p class="judges-position">Главный судья</p>
-                <div class="judges-name">Пьер Луиджи </br>Коллина<img src="images/key.png"> </div>
-            <div class="judges-city"><p>Омск</p> <p>1 кат.</p></div>
-        </div>
-        <div class="judges__block">
-            <p class="judges-position">Первый ассистент судьи</p>
-            <div class="judges-name">Сергей </br>Лапочкин<img src="images/flag.png"> </div>
-            <div class="judges-city"><p>Омск</p> <p>1 кат.</p></div>
-        </div>
-        <div class="judges__block">
-            <p class="judges-position">Второй ассистент судьи</p>
-            <div class="judges-name">Сергей </br>Карасев<img src="images/flag.png"> </div>
-            <div class="judges-city"><p>Омск</p> <p>1 кат.</p></div>
-        </div>
-        <div class="judges__block">
-            <p class="judges-position">Резервный судья</p>
-            <div class="judges-name">Евгений</br>Белов </div>
-            <div class="judges-city"><p>Омск</p> <p>1 кат.</p></div>
-        </div>
-        <div class="judges__block">
-            <p class="judges-position">Делегат матча</p>
-            <div class="judges-name">Василий</br>Седельников </div>
-            <div class="judges-city"><p>Омск</p> <p>1 кат.</p></div>
-        </div>
-        <div class="judges__block">
-            <p class="judges-position">VAR</p>
-            <div class="judges-name">Михаил</br>Самохвалов<img src="images/var.png"> </div>
-            <div class="judges-city"><p>Омск</p> <p>1 кат.</p></div>
-        </div>
-
-    </aside>
-</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

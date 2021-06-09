@@ -78,6 +78,7 @@ body {
     color: #184272;
     cursor: pointer;
     border-bottom: 2px solid transparent;
+    transition: 0.3s;
 }
 
 .teams-switch__team.active {
@@ -85,7 +86,6 @@ body {
     cursor: default;
     pointer-events: none;
     background: radial-gradient(50.14% 92.5% at 49.86% 92.5%, rgba(10, 139, 255, 0.17) 0%, rgba(255, 255, 255, 0) 100%);
-)
 }
 
 .teams-switch__icon {
@@ -171,7 +171,7 @@ body {
     padding-right: 10px;
 }
 
-.judges__block{
+.judges__block {
     width: 238px;
     min-height: 119px;
     background: #FFFFFF;
@@ -181,7 +181,7 @@ body {
     margin-top: 21px;
 }
 
-.judges-position{
+.judges-position {
     font-weight: bold;
     font-size: 12px;
     color: #C1C1C1;
@@ -189,7 +189,7 @@ body {
     margin-left: 19px;
 }
 
-.judges-name{
+.judges-name {
     display: flex;
     justify-content: space-between;
     font-weight: 600;
@@ -200,11 +200,12 @@ body {
     margin-right: 19px;
 }
 
-.judges-name img{
+.judges-name img {
     margin-top: -12px;
+    height: 100%;
 }
 
-.judges-city{
+.judges-city {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
@@ -282,6 +283,6 @@ body {
     color: #C1C1C1;
 }
 
-
-
-
+.hidden {
+    display: none;
+}
